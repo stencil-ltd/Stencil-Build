@@ -3,7 +3,7 @@ using UnityEditor.Callbacks;
 using UnityEditor.iOS.Xcode;
 using System.IO;
 
-#if STENCIL_ADMOB
+#if STENCIL_ADS
 using Ads;
 #endif
 
