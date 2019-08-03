@@ -2,7 +2,6 @@
 using UnityEditor.Callbacks;
 using UnityEditor.iOS.Xcode;
 using System.IO;
-using Ads;
 
 #if STENCIL_ADMOB
 using Ads;
