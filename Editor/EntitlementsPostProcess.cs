@@ -28,8 +28,14 @@ public class EntitlementsPostProcess
         proj.ReadFromFile(proj_path);
 
         // target_name = "Unity-iPhone"
+        string target_guid;
+        #if UNITY_2019_3_OR_NEWER
+        var target_name = "Unity-iPhone";
+        target_guid = proj.GetUnityMainTargetGuid();
+        #else
         var target_name = PBXProject.GetUnityTargetName();
-        var target_guid = proj.TargetGuidByName(target_name);        
+        target_guid = proj.TargetGuidByName(target_name);
+        #endif        
         var dst = buildPath + "/" + target_name + "/" + file_name;
         try
         {
