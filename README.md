@@ -1,4 +1,4 @@
-# Stencil-Build
+# Stencil-Build [DEPRECATED]
 Unity: Some build helpers for iOS &amp; Android. Signing, versioning, etc.
 
-`git submodule add git@github.com:stencil-ltd/Stencil-Build.git Assets/Stencil-Build`
+Use https://github.com/stencil-ltd/Stencil-Core instead.
